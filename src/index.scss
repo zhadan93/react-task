@@ -1,7 +1,6 @@
-@import './styles/base/fonts';
-
 @import './styles/abstract/variables';
 
 @import './styles/vendors/normalize';
 
-@import './styles/base/base';
+@import './styles/base/base', './styles/base/fonts', './styles/base/typography',
+  './styles/base/helpers';

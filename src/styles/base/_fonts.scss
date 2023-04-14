@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'Segoe UI';
+  font-family: $main-font;
   src: local('Segoe UI Regular'), local('SegoeUI-Regular'),
     url('@assets/fonts/SegoeUI.woff2') format('woff2'),
     url('@assets/fonts/SegoeUI.woff') format('woff'), url('@assets/fonts/SegoeUI.svg') format('svg');
@@ -7,7 +7,7 @@
 }
 
 @font-face {
-  font-family: 'Segoe UI';
+  font-family: $main-font;
   src: local('Segoe UI Bold'), local('SegoeUI-Bold'),
     url('@assets/fonts/SegoeUIBold.woff2') format('woff2'),
     url('@assets/fonts/SegoeUIBold.woff') format('woff'),

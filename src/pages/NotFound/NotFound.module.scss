@@ -1,0 +1,24 @@
+@import '@styles/abstract/variables';
+@import '@styles/base/typography';
+
+.notFound {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: $card-text-gap;
+}
+
+.errorCode {
+  color: $control-primary-bg;
+  font-size: 150px;
+}
+
+.title {
+  @extend %large-title;
+}
+
+.description {
+  margin-bottom: 40px;
+
+  text-align: center;
+}

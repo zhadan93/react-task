@@ -1,0 +1,42 @@
+@import '@styles/abstract/variables';
+
+.list {
+  display: flex;
+  gap: 32px;
+
+  list-style-type: none;
+}
+
+.link {
+  position: relative;
+
+  line-height: $page-nav-line-height;
+  text-decoration: none;
+  color: $secondary-text;
+
+  transition: $transition;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -16px;
+    left: 0;
+
+    width: 0;
+    height: 2px;
+
+    background-color: $link-border;
+
+    transition: $transition;
+    cursor: default;
+  }
+
+  &:hover,
+  &.active {
+    color: $primary-text;
+
+    &::after {
+      width: 100%;
+    }
+  }
+}
