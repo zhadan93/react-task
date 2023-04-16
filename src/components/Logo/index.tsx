@@ -7,9 +7,13 @@ import style from './Logo.module.scss';
 
 const { logo, link } = style;
 
-const Logo = () => {
+type LogoProps = {
+  className?: string;
+};
+
+const Logo: React.FC<LogoProps> = ({ className }) => {
   return (
-    <h1 className={classNames(logo)}>
+    <h1 className={classNames(logo, className)}>
       <Link className={classNames(link)} to={ROUTES.LEARNING}>
         Портал разработчика
       </Link>

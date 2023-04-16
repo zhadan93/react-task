@@ -1,8 +1,7 @@
 import { Outlet } from 'react-router-dom';
 import classNames from 'classnames';
 
-import Logo from '../Logo';
-import AppNav from '../AppNav';
+import Header from '../Header';
 
 import style from './Layout.module.scss';
 
@@ -11,10 +10,11 @@ const { main } = style;
 const Layout = () => {
   return (
     <>
+      <Header />
       <main className={classNames(main)}>
-        <Logo />
-        <AppNav />
-        <Outlet />
+        <div>
+          <Outlet />
+        </div>
       </main>
     </>
   );

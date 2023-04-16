@@ -1,0 +1,25 @@
+@import '@styles/abstract/variables';
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  max-width: 195px;
+  padding: 4px;
+  padding-right: 16px;
+
+  border-radius: 20px;
+
+  transition: $transition;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $control-ghost-bg;
+  }
+}
+
+.name {
+  white-space: nowrap;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+}
