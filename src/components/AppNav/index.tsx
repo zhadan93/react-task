@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom';
 import styles from './AppNav.module.scss';
 
 const { LEARNING, TASKS } = ROUTES;
-const { list, link, active } = styles;
+const { nav, list, link, active } = styles;
 
 const NAV = {
   learning: {
@@ -21,9 +21,13 @@ const NAV = {
 const setLinkClassName = ({ isActive }: { isActive: boolean }) =>
   classNames(link, { [active]: isActive });
 
-const AppNav = () => {
+type AppNavProps = {
+  className?: string;
+};
+
+const AppNav: React.FC<AppNavProps> = ({ className }) => {
   return (
-    <nav>
+    <nav className={classNames(nav, className)}>
       <ul className={classNames(list)}>
         {Object.entries(NAV).map(([key, { name, path }]) => (
           <li key={key}>

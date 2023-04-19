@@ -7,14 +7,14 @@ import User from '../User';
 
 import styles from './Header.module.scss';
 
-const { header, container, headerLogo, headerTools } = styles;
+const { header, container, nav, headerLogo, headerTools } = styles;
 
 const Header = () => {
   return (
     <header className={classNames(header)}>
       <div className={classNames(container)}>
         <Logo className={headerLogo} />
-        <AppNav />
+        <AppNav className={classNames(nav)} />
         <Tools className={headerTools} />
         <User />
       </div>

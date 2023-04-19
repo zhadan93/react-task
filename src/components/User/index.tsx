@@ -12,7 +12,7 @@ const User = () => {
       <div className={classNames()}>
         <Avatar />
       </div>
-      <span className={classNames(name)}>Михаил Романов</span>
+      <span className={classNames(name)}>Жадан Евгения</span>
     </div>
   );
 };

@@ -15,8 +15,13 @@
   align-items: center;
 }
 
+.nav {
+  align-self: flex-end;
+}
+
 .headerLogo {
   margin-right: 36px;
+  padding: 18px 0;
 }
 
 .headerTools {

@@ -1,5 +1,9 @@
 @import '@styles/abstract/variables';
 
+.nav {
+  display: flex;
+}
+
 .list {
   display: flex;
   gap: 32px;
@@ -8,7 +12,9 @@
 }
 
 .link {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 
   line-height: $page-nav-line-height;
   text-decoration: none;
@@ -18,10 +24,6 @@
 
   &::after {
     content: '';
-    position: absolute;
-    bottom: -20px;
-    left: 0;
-
     width: 0;
     height: 2px;
 
