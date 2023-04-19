@@ -6,3 +6,25 @@
   margin: 0 auto;
   padding: $default-padding;
 }
+
+%main-container {
+  max-width: $content-width;
+  margin: 0 auto;
+}
+
+.success-circular-progressbar {
+  width: 24px;
+
+  .CircularProgressbar-path {
+    stroke: $success-bg;
+    stroke-linecap: butt;
+  }
+
+  .CircularProgressbar-trail {
+    stroke: $ghost-bg;
+  }
+
+  .CircularProgressbar-background {
+    fill: $success-bg;
+  }
+}

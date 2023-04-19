@@ -1,4 +1,4 @@
-@import '../abstract/variables';
+@import '@styles/abstract/variables';
 
 .page {
   font-family: $main-font-family;
@@ -15,15 +15,17 @@
   text-transform: capitalize;
 }
 
-%large-title {
-  font-size: $large-title;
+%secondary-text {
+  font-size: $small-font;
+  color: $secondary-text;
 }
 
 %medium-title {
   font-size: $medium-title;
+  font-weight: $regular;
 }
 
-%secondary-text {
-  font-size: $small-font;
-  color: $secondary-text;
+%large-title {
+  font-size: $large-title;
+  font-weight: $regular;
 }

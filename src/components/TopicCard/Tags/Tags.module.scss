@@ -1,0 +1,31 @@
+@import '@styles/base/typography';
+
+.cardTags {
+  display: flex;
+
+  @extend %secondary-text;
+}
+
+.cardTag {
+  display: flex;
+  align-items: center;
+  gap: $main-text-gap;
+  padding-right: $main-text-gap;
+
+  &::after {
+    content: '';
+    width: 4px;
+    height: 4px;
+
+    background-color: $secondary-text;
+    border-radius: 100%;
+  }
+
+  &:last-child {
+    padding-right: 0;
+
+    &::after {
+      display: none;
+    }
+  }
+}

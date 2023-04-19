@@ -1,7 +1,8 @@
 @import '@styles/abstract/variables';
 
 .main {
-  height: 100vh;
+  min-height: 100vh;
+  padding-top: 108px;
 
   background-color: $secondary-bg;
 }

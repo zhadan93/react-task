@@ -5,9 +5,9 @@ import Logo from '../Logo';
 import Tools from './Tools';
 import User from '../User';
 
-import style from './Header.module.scss';
+import styles from './Header.module.scss';
 
-const { header, container, headerLogo, headerTools } = style;
+const { header, container, headerLogo, headerTools } = styles;
 
 const Header = () => {
   return (

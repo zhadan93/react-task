@@ -8,7 +8,7 @@ const description = 'Познакомьтесь ближе с компанией
 const startTotal = 10;
 const libraryTotal = 255;
 
-const data = [
+const topics = [
   {
     id: 1,
     title: greetingTitle,
@@ -91,6 +91,6 @@ const data = [
   },
 ];
 
-export const recommendedTopics = [data.at(1)];
-export const frontEndTopics = [...data.slice(0, 3)];
-export const allTopics = [...data.slice(2)];
+export const recommendedTopics = topics.slice(2, 3);
+export const frontEndTopics = topics.slice(0, 3);
+export const allTopics = topics.slice(2);

@@ -20,7 +20,9 @@
       "@/*": ["*"],
       "@assets/*": ["assets/*"],
       "@styles/*": ["styles/*"],
-      "@constants/*": ["constants/*"]
+      "@constants/*": ["constants/*"],
+      "@components/*": ["components/*"],
+      "@utils/*": ["utils/*"]
     }
   },
   "include": ["./src/**/*"],

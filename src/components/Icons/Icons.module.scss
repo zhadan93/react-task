@@ -2,4 +2,10 @@
 
 .icon {
   fill: $control-clear-icon;
+
+  transition: $transition;
+}
+
+.checkIcon {
+  fill: $default-icon;
 }

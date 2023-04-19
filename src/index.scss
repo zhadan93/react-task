@@ -1,6 +1,7 @@
 @import './styles/abstract/variables';
 
 @import './styles/vendors/normalize';
+@import 'react-circular-progressbar/dist/styles.css';
 
 @import './styles/base/base', './styles/base/fonts', './styles/base/typography',
   './styles/base/helpers';

@@ -3,9 +3,9 @@ import classNames from 'classnames';
 import Button from '@/components/Button';
 import { QuestionIcon, RingIcon, SunIcon } from '@/components/Icons/ToolsIcons';
 
-import style from './Tools.module.scss';
+import styles from './Tools.module.scss';
 
-const { tools, btn } = style;
+const { tools, btn } = styles;
 
 type ToolsProps = {
   className?: string;

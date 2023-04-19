@@ -1,10 +1,11 @@
 import { Link } from 'react-router-dom';
 import classNames from 'classnames';
 
-import style from './NotFound.module.scss';
 import ROUTES from '@/constants/routes';
 
-const { notFound, errorCode, title, description } = style;
+import styles from './NotFound.module.scss';
+
+const { notFound, errorCode, title, description } = styles;
 
 const NotFound = () => {
   return (

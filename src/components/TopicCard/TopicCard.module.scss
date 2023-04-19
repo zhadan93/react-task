@@ -1,0 +1,106 @@
+@import '@styles/base/typography';
+
+.card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: $card-width;
+  padding: $card-padding;
+
+  background-color: $default-bg;
+  border-radius: $main-border-radius;
+  box-shadow: $card-box-shadow;
+}
+
+.mainContent {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.cardTitle {
+  margin-bottom: 8px;
+  @extend %medium-title;
+}
+
+.cardTags {
+  margin-bottom: 11px;
+}
+
+.cardDescription {
+  margin-bottom: 38px;
+
+  font-size: $small-font;
+}
+
+.cardBtn {
+  justify-self: start;
+}
+
+.cardProgress {
+  justify-self: end;
+}
+
+.completeCardProgress {
+  align-self: end;
+  width: 24px;
+}
+
+.labelNumber {
+  color: $primary-text;
+}
+
+.completeProgressLabel {
+  position: absolute;
+  width: 100%;
+}
+
+.progressbarIcon {
+  width: 66.7%;
+  height: 66.7%;
+}
+
+.large {
+  &.card {
+    grid-template-columns: auto 1fr;
+    column-gap: 98px;
+    width: 100%;
+    padding-left: 98px;
+  }
+
+  &.mainContent {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+
+  &.cardTitle {
+    @extend %large-title;
+  }
+
+  &.cardDescription {
+    font-size: $medium-font;
+  }
+
+  &.cardProgress {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    justify-self: start;
+    align-self: center;
+    width: 170px;
+  }
+
+  &.cardProgressLabel {
+    position: absolute;
+    width: 100%;
+
+    flex-direction: column;
+  }
+
+  &.labelNumber {
+    font-size: $medium-title;
+  }
+
+  &.cardProgressbar {
+    width: 100%;
+  }
+}

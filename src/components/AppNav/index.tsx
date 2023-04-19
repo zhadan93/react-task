@@ -2,10 +2,10 @@ import ROUTES from '@/constants/routes';
 import classNames from 'classnames';
 import { NavLink } from 'react-router-dom';
 
-import style from './AppNav.module.scss';
+import styles from './AppNav.module.scss';
 
 const { LEARNING, TASKS } = ROUTES;
-const { list, link, active } = style;
+const { list, link, active } = styles;
 
 const NAV = {
   learning: {

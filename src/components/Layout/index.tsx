@@ -12,9 +12,7 @@ const Layout = () => {
     <>
       <Header />
       <main className={classNames(main)}>
-        <div>
-          <Outlet />
-        </div>
+        <Outlet />
       </main>
     </>
   );

@@ -2,7 +2,7 @@ import classNames from 'classnames';
 
 import { IconProps } from '@/types/types';
 
-import styles from './ToolsIcons.module.scss';
+import styles from '../Icons.module.scss';
 
 const { icon } = styles;
 
