@@ -1,0 +1,5 @@
+@import '@styles/base/helpers';
+
+.container {
+  @extend %main-container;
+}
