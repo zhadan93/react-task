@@ -1,15 +1,17 @@
 import classNames from 'classnames';
 
 import Geolocation from '@components/Geolocation';
+import OrganizationsSearch from '@/components/OrganizationsSearch';
 
 import styles from './Tasks.module.scss';
 
-const { container } = styles;
+const { container, geolocation } = styles;
 
 const Tasks = () => {
   return (
     <div className={classNames(container)}>
-      <Geolocation />
+      <Geolocation className={classNames(geolocation)} />
+      <OrganizationsSearch />
     </div>
   );
 };

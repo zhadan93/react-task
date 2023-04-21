@@ -12,14 +12,18 @@ const { article, title, container, section, sectionTitle, secondaryText, geoloca
   styles;
 const loader = <Loader className={classNames(geolocationLoader)} />;
 
-const Geolocation = () => {
+type GeolocationProps = {
+  className?: string;
+};
+
+const Geolocation: React.FC<GeolocationProps> = ({ className }) => {
   const [coords, coordinatesLoading, coordinateError] = useCoordinates();
   const [city, geolocationLoading, geolocationError] = useGeolocation(coords);
 
   const { lon, lat } = coords;
 
   return (
-    <article className={classNames(article)}>
+    <article className={classNames(article, className)}>
       <h2 className={classNames(title)}>Геолокация</h2>
       <div className={classNames(container)}>
         <section className={classNames(section)}>

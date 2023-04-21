@@ -1,0 +1,59 @@
+@import '@styles/base/typography';
+
+.article {
+  padding: $card-padding;
+
+  background-color: $default-bg;
+  border-radius: $main-border-radius;
+  box-shadow: $card-box-shadow;
+}
+
+.mainTitle {
+  @extend %large-title;
+}
+
+.secondaryTitle {
+  margin-bottom: $main-card-list-gap;
+
+  @extend %medium-title;
+}
+
+.smallTitle {
+  margin-bottom: $main-text-gap;
+
+  color: $control-ghost-text;
+}
+
+.group {
+  &:not(:last-child) {
+    margin-bottom: $main-card-list-gap;
+  }
+}
+
+.list {
+  list-style-type: none;
+}
+
+.link {
+  display: block;
+
+  font-size: $medium-font;
+  color: $primary-text;
+  text-decoration: none;
+
+  transition: $transition;
+
+  cursor: pointer;
+
+  &:hover {
+    color: $control-secondary-text;
+  }
+}
+
+.item {
+  padding: $main-text-gap 0;
+
+  &:not(:last-child) {
+    border-bottom: 1px solid $border;
+  }
+}

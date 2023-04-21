@@ -28,4 +28,36 @@ export interface CurrentCoords {
   lon: number;
 }
 
+export interface OrganizationData {
+  data: {
+    founders:
+      | {
+          name: string;
+        }[]
+      | null;
+    state: {
+      status: string;
+      registration_date: number;
+      liquidation_date: number | null;
+    };
+    branch_type: 'MAIN' | 'BRANCH';
+    name: {
+      full_with_opf: string;
+      short_with_opf: string;
+    };
+    inn: string;
+    address: {
+      unrestricted_value: string;
+    };
+  };
+}
+
+export interface OrganizationsData {
+  suggestions: OrganizationData[];
+}
+
+export interface OrganizationFoundQuery {
+  query: string;
+}
+
 export type LoadingStatus = 'idle' | 'pending' | 'fulfilled' | 'rejected';

@@ -1,25 +1,23 @@
 import { useEffect, useState } from 'react';
-
-import { CurrentCoords, LoadingStatus } from '@/types/types';
-
-import geolocationService from '@/services/geolocationService';
 import axios from 'axios';
 
-const useGeolocation = (coords: CurrentCoords): [string, LoadingStatus, string] => {
-  const [city, setCity] = useState('');
+import { LoadingStatus, OrganizationData } from '@/types/types';
+
+import organizationsService from '@/services/organizationsService';
+
+const useOrganizationsSearch = (query: string): [OrganizationData[], LoadingStatus, string] => {
+  const [data, setData] = useState<OrganizationData[]>([]);
   const [error, setError] = useState('');
   const [loading, setLoading] = useState<LoadingStatus>('idle');
 
   useEffect(() => {
-    if (coords.lat !== 200 && coords.lon !== 200) {
+    if (query && query.length > 3) {
       let ignore = false;
-
-      const getCity = async () => {
+      const getOrganizations = async () => {
         try {
-          const data = await geolocationService.getGeolocationAddress(coords);
-
+          const organizations = await organizationsService.findOrganizations({ query });
           if (!ignore) {
-            setCity(data.suggestions[0].data.city);
+            setData(organizations.suggestions);
             setLoading('fulfilled');
           }
         } catch (err) {
@@ -34,15 +32,15 @@ const useGeolocation = (coords: CurrentCoords): [string, LoadingStatus, string] 
 
       setError('');
       setLoading('pending');
-      getCity();
+      getOrganizations();
 
       return () => {
         ignore = true;
       };
     }
-  }, [coords]);
+  }, [query]);
 
-  return [city, loading, error];
+  return [data, loading, error];
 };
 
-export default useGeolocation;
+export default useOrganizationsSearch;
