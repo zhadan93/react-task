@@ -25,6 +25,7 @@
 - React
 - React Router Dom
 - React Circular Progressbar
+- Axios
 - Sass, css-модули
 - Classnames
 - Eslint & Prettier
