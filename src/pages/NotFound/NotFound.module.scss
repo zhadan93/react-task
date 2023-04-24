@@ -1,0 +1,26 @@
+@import '@styles/abstract/variables';
+@import '@styles/base/helpers';
+@import '@styles/base/typography';
+
+.notFound {
+  @extend %main-container;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: $main-text-gap;
+}
+
+.errorCode {
+  color: $control-primary-bg;
+  font-size: 150px;
+}
+
+.title {
+  @extend %large-title;
+}
+
+.description {
+  margin-bottom: 40px;
+
+  text-align: center;
+}

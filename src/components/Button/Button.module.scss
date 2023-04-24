@@ -1,0 +1,62 @@
+@import '@styles/abstract/variables';
+
+.btn {
+  display: flex;
+  align-items: center;
+
+  line-height: $card-btn-line-height;
+  color: $control-primary-text;
+
+  background-color: transparent;
+  border: none;
+  border-radius: $control-border-radius;
+
+  transition: $transition;
+  cursor: pointer;
+}
+
+.icon {
+  font-size: 0;
+  line-height: 0;
+
+  border-radius: 0;
+}
+
+.primary {
+  padding: 0 $control-padding;
+
+  background-color: $control-primary-bg;
+
+  &:hover {
+    background-color: $hover-control-primary-bg;
+  }
+}
+
+.secondary {
+  padding-left: $control-ghost-padding;
+  padding-right: $control-padding;
+
+  color: $control-secondary-text;
+
+  border: 1px solid $control-secondary-border;
+
+  &:hover {
+    color: $hover-control-secondary-text;
+
+    border: 1px solid $hover-control-secondary-border;
+  }
+}
+
+.ghost {
+  padding: 0 $control-ghost-padding;
+
+  font-size: $small-font;
+  line-height: $btn-line-height;
+  color: $control-ghost-text;
+
+  background-color: $control-ghost-bg;
+
+  &:hover {
+    background-color: $hover-control-ghost-bg;
+  }
+}

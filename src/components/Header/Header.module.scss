@@ -1,0 +1,30 @@
+@import '@styles/base/helpers';
+
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+
+  background-color: $default-bg;
+  border-bottom: 1px solid $border;
+}
+
+.container {
+  @extend %default-container;
+  align-items: center;
+}
+
+.nav {
+  align-self: flex-end;
+}
+
+.headerLogo {
+  margin-right: 36px;
+  padding: 18px 0;
+}
+
+.headerTools {
+  margin-left: auto;
+  margin-right: 16px;
+}

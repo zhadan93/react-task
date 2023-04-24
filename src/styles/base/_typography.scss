@@ -1,0 +1,31 @@
+@import '@styles/abstract/variables';
+
+.page {
+  font-family: $main-font-family;
+  font-size: $medium-font;
+  line-height: $medium-line-height;
+  font-weight: $regular;
+  color: $primary-text;
+}
+
+%logo {
+  font-size: $logo-font-size;
+  line-height: $logo-line-height;
+  font-weight: $bold;
+  text-transform: capitalize;
+}
+
+%secondary-text {
+  font-size: $small-font;
+  color: $secondary-text;
+}
+
+%medium-title {
+  font-size: $medium-title;
+  font-weight: $regular;
+}
+
+%large-title {
+  font-size: $large-title;
+  font-weight: $regular;
+}

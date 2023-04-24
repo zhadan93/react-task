@@ -1,0 +1,18 @@
+@import '@styles/abstract/variables';
+
+.tools {
+  display: flex;
+  gap: $main-text-gap;
+
+  list-style-type: none;
+}
+
+.btn {
+  padding: 4px;
+
+  border-radius: 100%;
+
+  &:hover {
+    background-color: $control-ghost-bg;
+  }
+}

@@ -1,0 +1,30 @@
+@import '../abstract/variables';
+
+%default-container {
+  display: flex;
+  max-width: $large-desktop;
+  margin: 0 auto;
+  padding: $default-padding;
+}
+
+%main-container {
+  max-width: $content-width;
+  margin: 0 auto;
+}
+
+.success-circular-progressbar {
+  width: 24px;
+
+  .CircularProgressbar-path {
+    stroke: $success-bg;
+    stroke-linecap: butt;
+  }
+
+  .CircularProgressbar-trail {
+    stroke: $ghost-bg;
+  }
+
+  .CircularProgressbar-background {
+    fill: $success-bg;
+  }
+}

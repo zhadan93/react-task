@@ -1,5 +1,6 @@
 /* Fonts */
-$main-font: 'Segoe UI', Arial, sans-serif;
+$main-font: 'Segoe UI';
+$main-font-family: $main-font, Arial, sans-serif;
 
 /* Fonts size */
 $medium-font: 1.6rem;
@@ -8,10 +9,14 @@ $large-title: 3.2rem;
 $medium-title: 2.4rem;
 $logo-font-size: 1.8rem;
 
+/* Font weight */
+$regular: 400;
+$bold: 700;
+
 /* Line height */
 $medium-line-height: 1.5;
 $page-nav-line-height: 1.2;
-$logo-line-height: 1.3;
+$logo-line-height: 1.33;
 $card-btn-line-height: 2.5;
 $btn-line-height: 2.3;
 $topic-nav-line-height: 1.33;
@@ -24,12 +29,20 @@ $control-primary-text: #ffffff;
 $control-secondary-text: #0078d2;
 $control-ghost-text: rgba(0, 57, 92, 0.8);
 $control-clear-icon: rgba(0, 57, 92, 0.8);
+$default-icon: #ffffff;
+
+$hover-control-secondary-text: #0091ff;
 
 $control-primary-bg: #0078d2;
 $control-ghost-bg: rgba(0, 66, 105, 0.07);
 
+$hover-control-primary-bg: #0091ff;
+$hover-control-ghost-bg: rgba(0, 66, 105, 0.05);
+
 $control-secondary-border: #0078d2;
 $control-default-border: rgba(0, 66, 105, 0.28);
+
+$hover-control-secondary-border: #0091ff;
 
 $default-bg: #ffffff;
 $secondary-bg: #ecf1f4;
@@ -42,14 +55,18 @@ $border: rgba(0, 65, 102, 0.2);
 $link-border: #0078d2;
 
 /* Box shadow */
-$box-shadow: 0px 2px 2px rgba(0, 32, 51, 0.02), 0px 2px 8px rgba(0, 32, 51, 0.16);
+$card-box-shadow: 0px 2px 2px rgba(0, 32, 51, 0.02), 0px 2px 8px rgba(0, 32, 51, 0.16);
 
 /* Border radius */
 $main-border-radius: 8px;
 $control-border-radius: 4px;
 
+/* Gap */
+$main-text-gap: 8px;
+$main-card-list-gap: 24px;
+
 /* Padding */
-$header-padding: 24px;
+$default-padding: 0 24px;
 $card-padding: 32px;
 $control-padding: 20px;
 $control-ghost-padding: 16px;
@@ -60,3 +77,6 @@ $content-width: 1440px;
 
 /* Breakpoints */
 $large-desktop: 1920px;
+
+/* Transition */
+$transition: 0.4s;

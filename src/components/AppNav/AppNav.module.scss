@@ -1,0 +1,44 @@
+@import '@styles/abstract/variables';
+
+.nav {
+  display: flex;
+}
+
+.list {
+  display: flex;
+  gap: 32px;
+
+  list-style-type: none;
+}
+
+.link {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  line-height: $page-nav-line-height;
+  text-decoration: none;
+  color: $secondary-text;
+
+  transition: $transition;
+
+  &::after {
+    content: '';
+    width: 0;
+    height: 2px;
+
+    background-color: $link-border;
+
+    transition: $transition;
+    cursor: default;
+  }
+
+  &:hover,
+  &.active {
+    color: $primary-text;
+
+    &::after {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+@import '@styles/base/typography';
+
+.button {
+  gap: 14px;
+
+  &:hover {
+    .icon {
+      fill: $hover-control-secondary-text;
+    }
+  }
+}
