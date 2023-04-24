@@ -6,12 +6,12 @@ import defaultStyles from '../Icons.module.scss';
 import styles from './ButtonIcons.module.scss';
 
 const { icon } = defaultStyles;
-const { backwardIcon, controlGhost } = styles;
+const { restartIcon, controlGhost } = styles;
 
-export const BackwardIcon: React.FC<IconProps> = ({ className }) => {
+export const RestartIcon: React.FC<IconProps> = ({ className }) => {
   return (
     <svg
-      className={classNames(icon, backwardIcon, className)}
+      className={classNames(icon, restartIcon, className)}
       width="16"
       height="16"
       viewBox="0 0 16 16"
@@ -35,6 +35,36 @@ export const DownIcon: React.FC<IconProps> = ({ className }) => {
       xmlns="http://www.w3.org/2000/svg"
     >
       <path d="M4.89818 9.18756L2.25177 6.54115L1.54467 7.24826L5.39822 11.1018L9.25177 7.24826L8.54467 6.54115L5.89818 9.18764V1.89825H4.89818V9.18756Z" />
+    </svg>
+  );
+};
+
+export const ForwardIcon: React.FC<IconProps> = ({ className }) => {
+  return (
+    <svg
+      className={classNames(icon, controlGhost, className)}
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path d="M14.5942 11L11.2971 7.70291L12.7113 6.2887L18.4226 12L12.7113 17.7113L11.2971 16.2971L14.5942 13H6V11H14.5942Z" />
+    </svg>
+  );
+};
+
+export const BackwardIcon: React.FC<IconProps> = ({ className }) => {
+  return (
+    <svg
+      className={classNames(icon, controlGhost, className)}
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path d="M9.40717 11L12.7043 7.70291L11.2901 6.2887L5.57874 12L11.2901 17.7113L12.7043 16.2971L9.40716 13H18V11H9.40717Z" />
     </svg>
   );
 };

@@ -8,6 +8,7 @@
 - Перейдите в ветку `$ git checkout task1`
 - Перейдите в ветку `$ git checkout task2`
 - Перейдите в ветку `$ git checkout task3`
+- Перейдите в ветку `$ git checkout finished-task`
 - Введите `$ npm install` в командной строке
 - Запустите проект `$ npm start dev`
 

@@ -53,3 +53,107 @@
   gap: 11px;
   padding-right: 12px;
 }
+
+.stripeContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin-bottom: $section-gap;
+  padding: $card-padding;
+
+  background-color: $stripe-bg;
+
+  overflow-x: hidden;
+}
+
+.frontEndTitle {
+  margin-right: $card-padding;
+}
+
+.listContainer {
+  width: 100%;
+}
+
+.frontEndList {
+  display: flex;
+  gap: $main-card-list-gap;
+
+  list-style-type: none;
+}
+
+.sliderBtnContainer {
+  display: flex;
+  gap: $main-text-gap;
+  margin-left: auto;
+}
+
+.sliderBtn {
+  padding: 4px;
+
+  border-radius: 100%;
+}
+
+.catalogTitle {
+  margin-bottom: $control-ghost-padding;
+}
+
+.allTopicsList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $main-card-list-gap;
+
+  list-style-type: none;
+}
+
+.catalogBtnContainer {
+  display: inline-flex;
+  margin-bottom: $main-card-list-gap;
+
+  border: 1px solid $control-default-border;
+  border-radius: $control-border-radius;
+}
+
+%catalog-buttons {
+  background-color: $control-ghost-bg;
+
+  &::before {
+    opacity: 0;
+  }
+
+  & + .catalogBtn {
+    &::before {
+      opacity: 0;
+    }
+  }
+}
+
+.catalogBtn {
+  position: relative;
+  padding: 9.5px 20px;
+
+  line-height: $topic-nav-line-height;
+
+  border-radius: $control-border-radius;
+
+  &:not(:first-child) {
+    &::before {
+      position: absolute;
+      left: 0;
+      content: '';
+      width: 1px;
+      height: 66%;
+
+      background-color: $control-default-border;
+
+      transition: $transition;
+    }
+  }
+
+  &:hover {
+    @extend %catalog-buttons;
+  }
+}
+
+.activeCatalogBtn {
+  @extend %catalog-buttons;
+}
