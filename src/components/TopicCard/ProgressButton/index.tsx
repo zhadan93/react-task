@@ -3,7 +3,7 @@ import classNames from 'classnames';
 import { ProgressStatus } from '@/types/enums';
 
 import Button from '@components/Button';
-import { BackwardIcon } from '@components/Icons/ButtonIcons';
+import { RestartIcon } from '@components/Icons/ButtonIcons';
 
 import styles from './ProgressButton.module.scss';
 
@@ -23,7 +23,7 @@ const buttons = {
   },
   [COMPLETE]: {
     name: 'Пройти заново',
-    Icon: BackwardIcon,
+    Icon: RestartIcon,
     kind: 'secondary',
   },
 } as const;

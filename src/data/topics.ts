@@ -21,16 +21,6 @@ const topics = [
   },
   {
     id: 2,
-    title: introductionTitle,
-    description,
-    tags: beginnerTags,
-    tasks: {
-      total: startTotal,
-      complete: 0,
-    },
-  },
-  {
-    id: 3,
     title: startTitle,
     description,
     tags: beginnerTags,
@@ -40,7 +30,37 @@ const topics = [
     },
   },
   {
+    id: 3,
+    title: introductionTitle,
+    description,
+    tags: beginnerTags,
+    tasks: {
+      total: startTotal,
+      complete: 0,
+    },
+  },
+  {
     id: 4,
+    title: libraryTitle,
+    description,
+    tags: professionalTags,
+    tasks: {
+      total: libraryTotal,
+      complete: 0,
+    },
+  },
+  {
+    id: 5,
+    title: introductionTitle,
+    description,
+    tags: professionalTags,
+    tasks: {
+      total: startTotal,
+      complete: 0,
+    },
+  },
+  {
+    id: 6,
     title: introductionTitle,
     description,
     tags: beginnerTags,
@@ -50,32 +70,12 @@ const topics = [
     },
   },
   {
-    id: 5,
-    title: libraryTitle,
-    description,
-    tags: professionalTags,
-    tasks: {
-      total: libraryTotal,
-      complete: 0,
-    },
-  },
-  {
-    id: 6,
-    title: libraryTitle,
-    description,
-    tags: professionalTags,
-    tasks: {
-      total: libraryTotal,
-      complete: 0,
-    },
-  },
-  {
     id: 7,
-    title: introductionTitle,
+    title: libraryTitle,
     description,
     tags: professionalTags,
     tasks: {
-      total: startTotal,
+      total: libraryTotal,
       complete: 0,
     },
   },
@@ -91,6 +91,6 @@ const topics = [
   },
 ];
 
-export const recommendedTopics = topics.slice(2, 3);
+export const recommendedTopics = topics.slice(1, 2);
 export const frontEndTopics = topics.slice(0, 3);
-export const allTopics = topics.slice(2);
+export const allTopics = [...topics.slice(1, 2), ...topics.slice(3)];
