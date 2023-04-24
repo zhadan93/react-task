@@ -1,0 +1,50 @@
+@import '@styles/base/typography';
+
+.article {
+  max-width: 300px;
+  padding: 32px;
+
+  background-color: $default-bg;
+  border-radius: $main-border-radius;
+}
+
+.title {
+  margin-bottom: 16px;
+
+  @extend %medium-title;
+}
+
+.container {
+  padding: 32px;
+
+  background-color: $stripe-bg;
+  border-radius: $main-border-radius;
+}
+
+.section {
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.sectionTitle {
+  margin-bottom: $main-text-gap;
+
+  @extend %medium-title;
+}
+
+.secondaryText {
+  @extend %secondary-text;
+}
+
+.geolocationLoader {
+  width: 40px;
+  height: 40px;
+
+  &::before {
+    box-shadow: 0 0 6px 0px $loader-box-shadow inset;
+  }
+
+  &::after {
+    box-shadow: 0 2px 0 $loader inset;
+  }
+}
