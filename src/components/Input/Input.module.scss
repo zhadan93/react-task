@@ -1,0 +1,29 @@
+@import '@styles/abstract/variables';
+
+.inputLabel {
+  display: flex;
+  flex-direction: column;
+  gap: $main-text-gap;
+}
+
+.input {
+  padding: 0 $control-padding;
+
+  line-height: $card-btn-line-height;
+
+  border: none;
+  border-radius: $control-border-radius;
+  outline: 1px solid $control-default-border;
+
+  &::placeholder {
+    color: $control-ghost-text;
+  }
+
+  &:hover {
+    outline-color: $hover-control-secondary-border;
+  }
+
+  &:focus {
+    outline-color: $control-secondary-border;
+  }
+}

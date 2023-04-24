@@ -1,0 +1,41 @@
+@import '@styles/base/typography';
+
+.dropdown {
+  max-height: 300px;
+
+  background-color: $default-bg;
+  border: 1px solid $border;
+  border-radius: $control-border-radius;
+  list-style-type: none;
+  overflow-y: auto;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  padding: $main-text-gap $control-ghost-padding;
+
+  transition: $transition;
+
+  cursor: pointer;
+
+  &:not(:last-child) {
+    border-bottom: 1px solid $border;
+  }
+
+  &:hover {
+    background-color: $hover-control-ghost-bg;
+  }
+}
+
+.itemDescription {
+  @extend %secondary-text;
+}
+
+.loader {
+  margin-top: 30px;
+}
+
+.organizationsList {
+  margin-top: $main-card-list-gap;
+}

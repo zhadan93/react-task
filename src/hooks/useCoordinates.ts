@@ -23,8 +23,9 @@ const useCoordinates = (): [CurrentCoords, LoadingStatus, string] => {
       if (!navigator.geolocation) {
         setError('Ваш браузер не поддерживает геолокацию...');
       } else {
-        navigator.geolocation.getCurrentPosition(success, error);
+        setError('');
         setLoading('pending');
+        navigator.geolocation.getCurrentPosition(success, error);
       }
     };
 
